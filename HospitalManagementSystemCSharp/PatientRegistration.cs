@@ -20,7 +20,7 @@ namespace HospitalManagementSystemCSharp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Sourov\HospitalManagementSystemCSharp\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\c#\HospitalManagementSystem-master\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
             con.Open();
             string gen = string.Empty;
             if (radioButton1.Checked)
@@ -67,7 +67,7 @@ namespace HospitalManagementSystemCSharp
 
         private void PatientRegistration_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Sourov\HospitalManagementSystemCSharp\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\c#\HospitalManagementSystem-master\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
             con.Open();
             string str1 = "select max(id) from patient;";
 

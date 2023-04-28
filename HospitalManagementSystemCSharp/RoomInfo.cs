@@ -22,7 +22,7 @@ namespace HospitalManagementSystemCSharp
         {
             // TODO: This line of code loads data into the 'hospitalDataSet2.room' table. You can move, or remove it, as needed.
             this.roomTableAdapter.Fill(this.hospitalDataSet2.room);
-            using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Sourov\HospitalManagementSystemCSharp\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True"))
+            using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\c#\HospitalManagementSystem-master\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True"))
             {
 
                 string str2 = "SELECT * FROM room";
@@ -36,7 +36,7 @@ namespace HospitalManagementSystemCSharp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Sourov\HospitalManagementSystemCSharp\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\c#\HospitalManagementSystem-master\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
             con.Open();
            
             try
@@ -58,7 +58,7 @@ namespace HospitalManagementSystemCSharp
                     textBox4.Text = "";
                     textBox5.Text = "";
                     textBox6.Text = "";
-                    using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Sourov\HospitalManagementSystemCSharp\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True"))
+                    using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\c#\HospitalManagementSystem-master\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True"))
                     {
 
                         string str2 = "SELECT * FROM room";

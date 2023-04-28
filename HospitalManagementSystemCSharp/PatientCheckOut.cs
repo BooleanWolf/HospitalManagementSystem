@@ -20,7 +20,7 @@ namespace HospitalManagementSystemCSharp
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Sourov\HospitalManagementSystemCSharp\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\c#\HospitalManagementSystem-master\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
 
             con.Open();
             if (textBox1.Text != "")
@@ -65,7 +65,7 @@ namespace HospitalManagementSystemCSharp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Sourov\HospitalManagementSystemCSharp\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\c#\HospitalManagementSystem-master\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
             con.Open();
             string gen = string.Empty;
             if (radioButton1.Checked)

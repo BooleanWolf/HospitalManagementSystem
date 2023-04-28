@@ -22,7 +22,7 @@ namespace HospitalManagementSystemCSharp
         {
             // TODO: This line of code loads data into the 'hospitalDataSet3.checkout' table. You can move, or remove it, as needed.
             this.checkoutTableAdapter.Fill(this.hospitalDataSet3.checkout);
-            using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Sourov\HospitalManagementSystemCSharp\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True"))
+            using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\c#\HospitalManagementSystem-master\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True"))
             {
 
                 string str2 = "SELECT * FROM checkout";
@@ -36,7 +36,7 @@ namespace HospitalManagementSystemCSharp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Sourov\HospitalManagementSystemCSharp\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True"))
+            using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\c#\HospitalManagementSystem-master\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True"))
             {
 
                 string str2 = "SELECT * FROM checkout where id='"+textBox1.Text +"'";

@@ -22,7 +22,7 @@ namespace HospitalManagementSystemCSharp
         {
             // TODO: This line of code loads data into the 'hospitalDataSet.staff' table. You can move, or remove it, as needed.
             this.staffTableAdapter.Fill(this.hospitalDataSet.staff);
-            using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Sourov\HospitalManagementSystemCSharp\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True"))
+            using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\c#\HospitalManagementSystem-master\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True"))
             {
 
                 string str2 = "SELECT * FROM staff";
@@ -32,7 +32,7 @@ namespace HospitalManagementSystemCSharp
                 da.Fill(dt);
                 dataGridView1.DataSource = new BindingSource(dt, null);
             }
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Sourov\HospitalManagementSystemCSharp\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\c#\HospitalManagementSystem-master\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
             con.Open();
             string str1 = "select max(id) from staff;";
 
@@ -58,7 +58,7 @@ namespace HospitalManagementSystemCSharp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Sourov\HospitalManagementSystemCSharp\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\c#\HospitalManagementSystem-master\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
             con.Open();
             string gen = string.Empty;
             if (radioButton1.Checked)
@@ -87,7 +87,7 @@ namespace HospitalManagementSystemCSharp
                     textBox5.Text = "";
                     textBox6.Text = "";
                     textBox7.Text = "";
-                    using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Sourov\HospitalManagementSystemCSharp\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True"))
+                    using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\c#\HospitalManagementSystem-master\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True"))
                     {
 
                         string str2 = "SELECT * FROM staff";
@@ -108,7 +108,7 @@ namespace HospitalManagementSystemCSharp
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Sourov\HospitalManagementSystemCSharp\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\c#\HospitalManagementSystem-master\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
 
             con.Open();
             if (textBox1.Text != "")
@@ -154,7 +154,7 @@ namespace HospitalManagementSystemCSharp
 
         private void button4_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Sourov\HospitalManagementSystemCSharp\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\c#\HospitalManagementSystem-master\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True");
             con.Open();
             string gen = string.Empty;
             if (radioButton1.Checked)
@@ -184,7 +184,7 @@ namespace HospitalManagementSystemCSharp
                     textBox5.Text = "";
                     textBox6.Text = "";
                     textBox7.Text = "";                 
-                    using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Sourov\HospitalManagementSystemCSharp\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True"))
+                    using (SqlConnection con1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\c#\HospitalManagementSystem-master\HospitalManagementSystemCSharp\hospital.mdf;Integrated Security=True"))
                     {
 
                         string str2 = "SELECT * FROM staff";
